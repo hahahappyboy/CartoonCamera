@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.seu.magiccamera.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/cartoon_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:background="@color/toolbar_color">
+            <android.support.v7.widget.LinearLayoutCompat
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:textSize="@dimen/size_20sp"
+                    android:textColor="@color/cartoon_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cartoon_toolbar_text"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:background="@mipmap/login_bg" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_camera"
+                android:layout_width="@dimen/size_100dp"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cartoon_start_text"
+                android:background="@drawable/btn_selector"
+                android:layout_alignParentBottom="true"
+                >
+            </Button>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20dp"
+            android:background="@color/login_bg_color"
+
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+rootProject.name = "CartoonCamera"
+include ':magicfilter'
+include ':cartoon'

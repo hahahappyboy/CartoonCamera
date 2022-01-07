@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.seu.magiccamera.activity.CameraActivity" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/cartoon_white">
+            <com.seu.magicfilter.widget.MagicCameraView
+                android:id="@+id/glsurfaceview_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/size_5dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_camera_mode"
+                    android:src="@drawable/icon_video"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btn_camera_switch"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_rewardcamera"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:paddingTop="@dimen/size_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cartoon_white"
+            >
+            <ImageView
+                android:layout_width="@dimen/size_50dp"
+                android:layout_height="@dimen/size_50dp"
+                android:background="@mipmap/nini"
+                android:layout_marginLeft="@dimen/size_20dp"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="对准镜头露出脸部轮廓，保持光鲜匀称，体现立体五官"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple_500"
+                android:background="@color/cartoon_white">
+            </TextView>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_filter"
+            layout="@layout/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white">
+                    <ImageView
+                        android:id="@+id/btn_camera_beauty"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:src="@drawable/btn_camera_beauty"
+                        android:scaleType="center">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:id="@+id/btn_camera_shutter"
+                        android:src="@drawable/btn_camera_shutter">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:scaleType="center"
+                        android:id="@+id/btn_camera_album"
+                        android:src="@drawable/btn_camera_filter">
+                    </ImageView>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
