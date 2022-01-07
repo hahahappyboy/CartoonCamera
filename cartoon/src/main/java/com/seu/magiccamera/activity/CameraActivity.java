@@ -265,7 +265,6 @@ public class CameraActivity extends Activity implements View.OnClickListener {
 //                String[] split = img_path.split("/");
 //                String fileName = split[split.length - 1];
 //                Log.i("DML", "onActivityResult: " + fileName);
-
             }
         }
     }
