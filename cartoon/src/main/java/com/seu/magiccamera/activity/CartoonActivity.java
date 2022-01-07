@@ -4,10 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.util.Log;
@@ -16,15 +20,23 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.seu.magiccamera.R;
 import com.seu.magiccamera.http.HttpContants;
 import com.seu.magiccamera.http.OkHttpUtils;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Random;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
@@ -165,7 +177,36 @@ public class CartoonActivity extends Activity implements View.OnClickListener {
         cartoon_photo_textview = findViewById(R.id.cartoon_photo_textview);
 
     }
-
+    private void saveImage(Bitmap image) {
+        String saveImagePath = null;
+        Random random = new Random();
+        String imageFileName = "JPEG_" + "down" + random.nextInt(10) + ".jpg";
+        File storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "test");
+        boolean success = true;
+        if(!storageDir.exists()){
+            success = storageDir.mkdirs();
+        }
+        if(success){
+            File imageFile = new File(storageDir, imageFileName);
+            saveImagePath = imageFile.getAbsolutePath();
+            try {
+                OutputStream fout = new FileOutputStream(imageFile);
+                image.compress(Bitmap.CompressFormat.JPEG, 100, fout);
+                fout.close();
+            }catch (IOException e) {
+                e.printStackTrace();
+            }
+            galleryAddPic(saveImagePath);
+            Toast.makeText(this, "保存成功", Toast.LENGTH_LONG).show();
+        }
+    }
+    private void galleryAddPic(String imagePath) {
+        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File f = new File(imagePath);
+        Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        sendBroadcast(mediaScanIntent);
+    }
     @Override
     public void onClick(View view) {
         switch (view.getId()){
@@ -185,8 +226,15 @@ public class CartoonActivity extends Activity implements View.OnClickListener {
                 control_bg_condition = 1;
                 add_uniquename_edittext.setText("");
                 break;
-            case R.id.download_imgview:
-                Toast.makeText(this,"保存成功",Toast.LENGTH_SHORT).show();
+            case R.id.download_imgview://保存图片
+                Glide.with(CartoonActivity.this).asBitmap().load(HttpContants.URL+respose).into(new SimpleTarget<Bitmap>() {
+                        @Override
+                        public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                                                            saveImage(resource);
+                        }
+                });
+
+                //Toast.makeText(this,"保存成功",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.original_img_linearlayout: // 原图
                 original_img_lilay.setBackgroundResource(R.drawable.bg_recycle_style_pink);
@@ -258,7 +306,6 @@ public class CartoonActivity extends Activity implements View.OnClickListener {
                         });
                     }
                 }).start();
-
                 break;
 
         }
