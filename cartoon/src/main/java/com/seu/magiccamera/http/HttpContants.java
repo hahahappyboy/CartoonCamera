@@ -9,13 +9,12 @@ package com.seu.magiccamera.http;
 
 public class HttpContants {
 
-    //义乌项目本地服务器图片存储基地址
+
     /**本地修改**/
-    public static final  String URL = "http://192.168.5.130:5000";
+    public static final  String URL = "http://192.168.179.130:5000";
     public static final String BASE_URL_10 = URL+"/GANForCartoon";
     public static final String BASE_URL_11 = URL+"/Activate";
 
-    /**212服务器**/
-//    public static final String BASE_URL_10 = "http://212.129.234.194:5000/GANForCartoon";
+
 
 }
