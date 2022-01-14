@@ -2,7 +2,7 @@ package com.seu.magiccamera.http;
 
 /**
  * <pre>
- *     author : 朱旭辉
+ *     author : zhuleilei
  *     time   : 2019/09/10
  *     desc   :用与记录服务器连接信息
  */

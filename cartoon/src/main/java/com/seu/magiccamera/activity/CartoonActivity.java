@@ -43,7 +43,7 @@ import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
 /**
- * Created by why8222 on 2016/3/18.
+ * Created by zhuleilei on 2016/3/18.
  */
 public class CartoonActivity extends Activity implements View.OnClickListener {
     private RelativeLayout preground_relay;//前景置白

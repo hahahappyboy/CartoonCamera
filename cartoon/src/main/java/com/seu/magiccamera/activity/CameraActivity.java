@@ -54,7 +54,7 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
 /**
- * Created by why8222 on 2016/3/17.
+ * Created by zhuleilei on 2022/1/14.
  */
 public class CameraActivity extends Activity implements View.OnClickListener {
     private final int CHOOSE_PHOTO = 100;

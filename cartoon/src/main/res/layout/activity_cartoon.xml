@@ -33,7 +33,7 @@
                 android:textColor="@color/cartoon_white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="卡通映像"
+                android:text="@string/cartoon_toolbar_text"
                 android:layout_gravity="center"
                 android:textStyle="bold"
                 android:gravity="center"
