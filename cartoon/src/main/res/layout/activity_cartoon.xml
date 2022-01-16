@@ -15,7 +15,13 @@
             android:layout_weight="1"
             android:background="@color/toolbar_color"
             android:layout_height="match_parent">
-
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/header_back"
+                android:background="@mipmap/back"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="20dp"/>
         </LinearLayout>
         <android.support.v7.widget.LinearLayoutCompat
             android:orientation="horizontal"
