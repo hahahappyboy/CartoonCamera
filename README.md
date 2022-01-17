@@ -12,7 +12,7 @@ APP界面参考了微信小程序AI卡通秀，项目是在[MagicCamera](https:/
 
 
 ## 前景融合
-<img src="https://img-blog.csdnimg.cn/a19405e5d75e4145a8ef79898ee0c9aa.gif" width="200">     <img src="https://img-blog.csdnimg.cn/d095c6d03d2c4951ad039b7fd90714b3.gif" width="200">
+<img src="https://img-blog.csdnimg.cn/762823d21e164d549da0887745e565e5.gif" width="200">     <img src="https://img-blog.csdnimg.cn/d095c6d03d2c4951ad039b7fd90714b3.gif" width="200">
 
 ## 背景融合
 <img src="https://img-blog.csdnimg.cn/5f0e08872b7c4f16acb8cdb7621102a6.gif" width="200">     <img src="https://img-blog.csdnimg.cn/2c320914dec44e01b9dbf1f381cc8d84.gif" width="200">
