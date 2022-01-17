@@ -7,13 +7,13 @@ APP界面参考了微信小程序AI卡通秀，项目是在[MagicCamera](https:/
 # 效果~
 ## 拍照或者从相册中选图片
 
-<img src="https://img-blog.csdnimg.cn/762823d21e164d549da0887745e565e5.gif" width="20">  <img src="https://img-blog.csdnimg.cn/229e19ad99f848c181d1ca7bf60ede4e.gif" width="20">
+<img src="https://img-blog.csdnimg.cn/762823d21e164d549da0887745e565e5.gif" width="200">     <img src="https://img-blog.csdnimg.cn/229e19ad99f848c181d1ca7bf60ede4e.gif" width="200">
 
 ## 前景融合
-<img src="https://img-blog.csdnimg.cn/c230e0f63de24a2b91988444c744d5c3.gif" width="200"><img src="https://img-blog.csdnimg.cn/d095c6d03d2c4951ad039b7fd90714b3.gif" width="200">
+<img src="https://img-blog.csdnimg.cn/c230e0f63de24a2b91988444c744d5c3.gif" width="200">     <img src="https://img-blog.csdnimg.cn/d095c6d03d2c4951ad039b7fd90714b3.gif" width="200">
 
 ## 背景融合
-<img src="https://img-blog.csdnimg.cn/5f0e08872b7c4f16acb8cdb7621102a6.gif" width="200">  <img src="https://img-blog.csdnimg.cn/2c320914dec44e01b9dbf1f381cc8d84.gif" width="200">
+<img src="https://img-blog.csdnimg.cn/5f0e08872b7c4f16acb8cdb7621102a6.gif" width="200">     <img src="https://img-blog.csdnimg.cn/2c320914dec44e01b9dbf1f381cc8d84.gif" width="200">
 
 ## 个性签名
 <img src="https://img-blog.csdnimg.cn/c2755c3ce0d741da817a0846f30db9c6.gif" width="200">  <img src="https://img-blog.csdnimg.cn/cd66cf9f32ba4297a3ad241a859387bc.gif" width="200">
