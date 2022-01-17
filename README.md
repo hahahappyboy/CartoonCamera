@@ -25,6 +25,7 @@ APP界面参考了微信小程序AI卡通秀，项目是在[MagicCamera](https:/
  1、 下载代码
 
 Android的代码：[https://github.com/hahahappyboy/CartoonCamera](https://github.com/hahahappyboy/CartoonCamera)
+
 Flask后台的代码：[https://github.com/hahahappyboy/CartoonCameraFlaskWeb](https://github.com/hahahappyboy/CartoonCameraFlaskWeb)
 没错！这个项目后端是用Flask写的~
 
