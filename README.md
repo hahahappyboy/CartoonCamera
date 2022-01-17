@@ -7,10 +7,7 @@ APP界面参考了微信小程序AI卡通秀，项目是在[MagicCamera](https:/
 # 效果~
 ## 拍照或者从相册中选图片
 
-<img src="https://img-blog.csdnimg.cn/762823d21e164d549da0887745e565e5.gif" width="30%">     <img src="https://img-blog.csdnimg.cn/229e19ad99f848c181d1ca7bf60ede4e.gif" width="30%">
-
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c5c2d0814be948eb928489e8cac0f7d3.gif)
+<img src="https://img-blog.csdnimg.cn/762823d21e164d549da0887745e565e5.gif" width="30%">     <img src="https://img-blog.csdnimg.cn/ea02e10fcd0e4c278cb09fa21569d900.gif" width="30%">
 
 
 ## 前景融合
